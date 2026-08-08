@@ -1,0 +1,28 @@
+StegBuster User Manual
+Upon opening the StegBuster application for the first time, the devices anti-virus software may scan the application due to it being marked as a “suspicious file”. Allow the anti-virus software to complete the scan, no malicious software will be found and the application will continue to open.
+The following instructions will act as a guided walkthrough on how to use the StegBuster application:
+
+Within the StegBuster folder, open the ‘StegBuster.exe’ file. This will open up a command terminal, shortly followed by the StegBuster application homepage.
+
+Select the ‘Scan Image’ button and find the StegBuster folder that you have downloaded. Inside, open the ‘Images’ folder. Here you will find eight images, four labelled ‘ns’ and four labelled ‘s’. 
+The images labelled ‘ns’ are clean images, containing no steganography or embedded content, while the images labelled ‘s’ contain embedded content.
+ 
+Select any of the images within this folder to scan the image for hidden/embedded content. The images metadata information will appear in the left column, containing key information such as the file hash values, image creation/modification time, resolution, etc.
+
+The detection results will appear in the right column with a brief analysis for each colour channel of the image, along with an overall detection result. StegBuster has an overall success rate of 63%, and so will not work with all images. All images scanned by StegBuster MUST be above 1Mb as anything smaller will be automatically marked as suspicious.
+
+A warning will appear if any steganography is detected, asking whether the selected file should be quarantined or left on the computer. 
+
+If the file is selected for quarantine, it will be encrypted and sent to the ‘quarantine’ folder. If you wish to recover the file from quarantine, select the ‘View Quarantine’ button, displaying a list of all files currently encrypted in the ‘quarantine’ folder. Select the file you wish to recover, and the file will be decrypted and recovered.
+
+For image comparison, select the ‘Compare Two Images’ button. This will allow you to select two images. Pair the same images together (for example ‘ns1’ and ‘s1’, or ‘ns2’ and ‘s2’). This function will show whether both images are the same image, or whether there are differences that users cannot see. This will also show where in the image the hidden content is being stored.
+
+It is also possible to check for differences between two images in the metadata section by checking the hash value of one image, and then checking the hash value of the second image. If these hash values differ, the images are not the same image, indicating that one may contain embedded content.
+
+The final feature of the StegBuster application is least significant bit (LSB) heatmap generation for selected images. This creates visualisation for the user, displaying the least significant bit (LSB) distribution. To do this, select the ‘Generate LSB Heatmap’ button.
+
+Upon selecting an image, the application will generate a least significant bit heatmap of the selected image.
+
+Users may experiment with the images allocated within the ‘images’ folder, located in the original  StegBuster folder. After becoming comfortable with using the application, users may also use StegBuster on their own images. In order to make an image that is big enough to be handled by StegBuster, users must take pictures on their mobile devices and use these images for analysis. 
+
+Thank you for using StegBuster.
